@@ -32,7 +32,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 # Number of outputs per strategy per prompt
-num_outputs = 10
+num_outputs = 2
 
 # Generate outputs
 all_outputs = {prompt: {strategy: [] for strategy in strategies} for prompt in prompts}
